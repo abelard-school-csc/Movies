@@ -8,6 +8,9 @@ This repository contains an analysis of a movie dataset, exploring various aspec
 - **Year range:** 1891 - 2015
 - **Average movies per year:** 230
 
+## Dataset Source
+This dataset is sourced from [MovieLens 20M Dataset](https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset?select=movie.csv).
+
 ## Visualizations
 
 ### Genre Distribution
