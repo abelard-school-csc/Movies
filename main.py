@@ -35,13 +35,6 @@ plt.tight_layout()
 plt.savefig('images/movies_per_year.png')
 plt.close()
 
-df['year'] = df['title'].str.extract('\((\d{4})\)')
-df = df.dropna(subset=['year'])
-df['year'] = df['year'].astype(int)
-df['genres_split'] = df['genres'].str.split('|')
-all_genres = [genre for genres in df['genres_split'] for genre in genres]
-genre_counts = pd.Series(all_genres).value_counts()
-
 plt.figure(figsize=(12, 6))
 sns.barplot(x=genre_counts.values, y=genre_counts.index)
 plt.title('Most Common Movie Genres')
